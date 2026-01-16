@@ -22,21 +22,29 @@ The application should include a `Task` model with the following attributes:
 
 ## API Endpoints
 
-### Create a new task
-- **POST** `/api/v1/tasks`
+- **POST** `/api/v1/tasks`  
+  Create a new task.
 
----
+- **GET** `/api/v1/tasks`  
+  Retrieve a list of all tasks.
 
-### Retrieve all tasks
-- **GET** `/api/v1/tasks`
+- **GET** `/api/v1/tasks/{id}`  
+  Retrieve a specific task by its ID.
 
----
+- **GET** `/api/v1/tasks/status`  
+  Retrieve tasks based on their status (e.g., `PENDING`, `COMPLETED`).
 
-### Retrieve a task by ID
-- **GET** `/api/v1/tasks/{id}`
+- **GET** `/api/v1/tasks/overdue`  
+  Retrieve all overdue tasks.
 
----
+- **PUT** `/api/v1/tasks/{id}`  
+  Update a specific task by its ID.
 
-### Retrieve tasks by status
-- **GET** `/api/v1/tasks/status`
-- **Query Param Example:**  
+- **DELETE** `/api/v1/tasks/{id}`  
+  Delete a specific task by its ID.
+
+- **GET** `/api/v1/tasks/sort`  
+  Retrieve tasks sorted by due date.
+
+- **GET** `/api/v1/tasks/deleted`  
+  Retrieve all deleted tasks.
