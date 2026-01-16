@@ -1,8 +1,8 @@
-Assignment: Build a Personal Task Management Web Application
-Objective:
+##Assignment: Build a Personal Task Management Web Application
+##Objective:
 Develop a Spring Boot application that allows users to manage their personal tasks.
 
-Task Model:
+##Task Model:
 The application should include a Task model with the following attributes:
 
 id: int
@@ -12,7 +12,7 @@ dueDate: LocalDate
 status: enum (PENDING, COMPLETED)
 Any extra field you can add as per your need
 
-API Endpoints:
+##API Endpoints:
 POST /api/v1/tasks: Create a new task.
 GET /api/v1/tasks: Retrieve a list of all tasks.
 GET /api/v1/tasks/{id}: Retrieve a specific task by its ID.
